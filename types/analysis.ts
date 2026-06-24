@@ -14,3 +14,13 @@ export type AnalysisResult = {
   recommendations: string[];
   skillDistribution: SkillDistribution;
 };
+
+export type RoleMatchResult = {
+  targetRole: string;
+  matchScore: number;
+  matchedSkills: string[];
+  missingRoleSkills: string[];
+  suggestions: string[];
+  roadmap: string[];
+  summary: string;
+};
